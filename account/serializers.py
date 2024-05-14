@@ -25,12 +25,12 @@ class RegistrationSerializer(serializers.Serializer):
         if password != password_confirm:
             raise serializers.ValidationError('Passwords do not match')
 
-        email = attrs.get('email')
-        user = User.objects.filter(email=email).first()
-        if user and user.is_active:
-            activation_code = attrs.get('activation_code')
-            if activation_code:
-                raise serializers.ValidationError('Activation code should be empty for activated users')
+        # email = attrs.get('email')
+        # user = User.objects.filter(email=email).first()
+        # if user and user.is_active:
+        #     activation_code = attrs.get('activation_code')
+        #     if activation_code:
+        #         raise serializers.ValidationError('Activation code should be empty for activated users')
         return attrs
 
     def create(self, validated_data):

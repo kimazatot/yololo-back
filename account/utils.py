@@ -1,13 +1,13 @@
 from django.core.mail import send_mail
 
 
-def send_activation_code(email, activation_code):
+def send_activation_code(email,activation_code):
     message = f'''Вы успешно зарегистрировались на нашем сайте.
     Пройдите активацию аккаунта, код активации {activation_code}
     '''
     send_mail(
         'Активация аккаунта',
         message,
-        'kimazatot@gmail.com',
+        'test@gmail.com',
         [email]
     )

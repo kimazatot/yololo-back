@@ -66,6 +66,18 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:8000',
+    'http://localhost:3000',
+    'https://domain.com',
+    'http://192.168.0.198:8001',
+]
+
+# 192.168.0.198
+# wlp0s20f3
+
+CORS_ALLOWED_METHODS = ['OPTIONS', 'GET', 'PUT', 'PATCH', 'POST']
+
 ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
@@ -164,8 +176,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASSWORD')
+EMAIL_HOST_USER = config('EMAIL_USER')
+EMAIL_HOST_PASSWORD = config('EMAIL_PASSWORD')
 
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -190,19 +202,19 @@ JAZZMIN_SETTINGS = {
     "copyright": "solo",
 }
 
-CORS_ALLOW_ALL_ORIGINS = True
-
-CORS_ALLOW_HEADERS = [
-    "accept",
-    "Accept-Encoding",
-    "authorization",
-    "content-type",
-    "Accept-Language",
-    "Accept-Location",
-    "dnt",
-    "origin",
-    "user-agent",
-    "x-csrftoken",
-    "x-requested-with",
-]
-
+# CORS_ALLOW_ALL_ORIGINS = True
+#
+# CORS_ALLOW_HEADERS = [
+#     "accept",
+#     "Accept-Encoding",
+#     "authorization",
+#     "content-type",
+#     "Accept-Language",
+#     "Accept-Location",
+#     "dnt",
+#     "origin",
+#     "user-agent",
+#     "x-csrftoken",
+#     "x-requested-with",
+# ]
+#
