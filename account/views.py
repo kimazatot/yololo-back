@@ -13,14 +13,13 @@ logger = logging.getLogger(__name__)
 class RegistrationView(APIView):
     @swagger_auto_schema(request_body=RegistrationSerializer())
     def post(self, request):
-        try:
-            serializer = RegistrationSerializer(data=request.data)
-            serializer.is_valid(raise_exception=True)
-            serializer.save()
-            return Response('Аккаунт успешно создан', status=201)
-        except Exception as e:
-            logger.error(f'Произошла ошибка: {e}')
-            return Response('Произошла ошибка при регистрации', status=500)
+        serializer = RegistrationSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response('Аккаунт успешно создан', status=201)
+        # except Exception as e:
+        #     logger.error(f'Произошла ошибка: {e}')
+        #     return Response('Произошла ошибка при регистрации', status=500)
 
 
 class ActivationView(APIView):

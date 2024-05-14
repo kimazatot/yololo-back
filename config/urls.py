@@ -35,3 +35,5 @@ urlpatterns = [
     path('docs/', schema_view.with_ui('swagger')),
     path('api/v1/account/', include('account.urls')),
 ]
+
+
