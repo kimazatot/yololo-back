@@ -13,9 +13,9 @@ mail = Mail(app)
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'miralibaltabaev59@gmail.com'
-app.config['MAIL_PASSWORD'] = 'moyasemya56'
-app.config['MAIL_DEFAULT_SENDER'] = 'miralibaltabaev59@gmail.com'
+app.config['MAIL_USERNAME'] = 'wewqw59@gmail.com'
+app.config['MAIL_PASSWORD'] = 'wwew56'
+app.config['MAIL_DEFAULT_SENDER'] = 'miererewbeweaev59@gmail.com'
 
 
 
@@ -66,7 +66,9 @@ def send_message():
 
 if __name__ == '__main__':
     app.run(port=9584, debug=True)
+
     while True:
             if __name__ == '__main__':
                 schedule.run_pending()
             time.sleep(10)
+
