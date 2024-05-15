@@ -24,7 +24,7 @@ app.config['MAIL_DEFAULT_SENDER'] = 'miralibaltabaev59@gmail.com'
 
 
 
-MESSAGE = "сообщение"
+MESSAGE = "сообщения"
 users = None
 
 def rec_email():
