@@ -66,6 +66,7 @@ def send_message():
 
 if __name__ == '__main__':
     app.run(port=9584, debug=True)
-while True:
-    schedule.run_pending()
-    time.sleep(1000)
+    while True:
+            if __name__ == '__main__':
+                schedule.run_pending()
+            time.sleep(10)
