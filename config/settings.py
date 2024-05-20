@@ -67,11 +67,10 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'https://yololo-back-5.onrender.com',
-    # 'http://localhost:8000',
-    # 'http://localhost:3000',
-    # 'https://domain.com',
-    # 'http://192.168.0.198:8001',
+    'http://localhost:8000',
+    'http://localhost:3000',
+    'https://domain.com',
+    'http://192.168.0.198:8001',
 ]
 
 # 192.168.0.198
