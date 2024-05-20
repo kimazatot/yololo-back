@@ -67,10 +67,11 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:8000',
-    'http://localhost:3000',
-    'https://domain.com',
-    'http://192.168.0.198:8001',
+    'https://yololo-back-5.onrender.com',
+    # 'http://localhost:8000',
+    # 'http://localhost:3000',
+    # 'https://domain.com',
+    # 'http://192.168.0.198:8001',
 ]
 
 # 192.168.0.198
@@ -202,19 +203,19 @@ JAZZMIN_SETTINGS = {
     "copyright": "solo",
 }
 
-# CORS_ALLOW_ALL_ORIGINS = True
-#
-# CORS_ALLOW_HEADERS = [
-#     "accept",
-#     "Accept-Encoding",
-#     "authorization",
-#     "content-type",
-#     "Accept-Language",
-#     "Accept-Location",
-#     "dnt",
-#     "origin",
-#     "user-agent",
-#     "x-csrftoken",
-#     "x-requested-with",
-# ]
-#
+CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOW_HEADERS = [
+    "accept",
+    "Accept-Encoding",
+    "authorization",
+    "content-type",
+    "Accept-Language",
+    "Accept-Location",
+    "dnt",
+    "origin",
+    "user-agent",
+    "x-csrftoken",
+    "x-requested-with",
+]
+
